@@ -7,7 +7,8 @@ date: "2023-01-09"
 ---
 
 # Staying Relevant is difficult!
-<iframe src="https://giphy.com/embed/f3Fyup5KscPQvfR5sS" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/SpongeBobMovie-spongebob-movie-spongeontherun-f3Fyup5KscPQvfR5sS">via GIPHY</a></p>
+
+![Helloo](https://media.giphy.com/media/f3Fyup5KscPQvfR5sS/giphy.gif)
 
 The "Hello World" program remains a timeless and invaluable tradition in the world of programming. 
 
