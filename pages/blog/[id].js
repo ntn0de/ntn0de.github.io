@@ -10,7 +10,7 @@ const { getBlogData, getAllBlogsPath } = require("@/app/getBlogs");
 export default function Blog({ blogData, blogContent }) {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center  pt-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center  py-24 ${inter.className}`}
     >
       <BlogContent blogData={blogData} blogContent={blogContent} />
     </main>
