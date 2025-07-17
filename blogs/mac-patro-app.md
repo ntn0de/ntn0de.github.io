@@ -9,9 +9,9 @@ date: "2025-02-04"
 
 Mac Patro is an Electron-based desktop application that displays a Nepali calendar and other relevant information in a tray icon and a pop-up window. It is designed to run on macOS.
 
-## Download
-* [Mac ( Intel )](https://github.com/ntn0de/ntn0de.github.io/raw/refs/heads/main/blogs/files/Mac%20Patro-darwin-x64-1.0.0.zip)
-* [Mac ( Apple Silicon )](https://github.com/ntn0de/ntn0de.github.io/raw/refs/heads/main/blogs/files/Mac%20Patro-darwin-amd64-1.0.0.zip)
+## Download 
+* [Mac ( Intel )](https://github.com/ntn0de/ntn0de.github.io/blob/main/blogs/files/Mac%20Patro-darwin-x64.zip)
+* [Mac ( Apple Silicon )](https://github.com/ntn0de/ntn0de.github.io/blob/main/blogs/files/Mac%20Patro-darwin-arm64.zip)
 
 ## Installation guide
 - Unzip the relevant file based on your system architecture
