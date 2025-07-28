@@ -7,6 +7,8 @@ date: "2025-02-04"
 ---
 
 <strong>Announcement</strong>: I'm working on a native app for MacOS. You can download MacPatroNative(Early Preview) from [here](https://github.com/ntn0de/ntn0de.github.io/raw/refs/heads/main/blogs/files/MacPatroNative.zip)
+
+Open-sourced on [GitHub](https://github.com/ntn0de/mac-patro-native/) [Available shortly after some changes]
 ----------------------------------------------
 ### Download ([here](https://github.com/ntn0de/ntn0de.github.io/raw/refs/heads/main/blogs/files/MacPatroNative.zip))
 
@@ -22,7 +24,7 @@ Mac Patro is an Electron-based desktop application that displays a Nepali calend
 
 ## Installation guide
 - Unzip the relevant file based on your system architecture
--   If installation failed with untrusted certificate error, run the following command
+-   If installation failed with untrusted certificate error or file is broken, run the following command
     ```
     xattr -c <path to Mac Patro.app>
     ```
