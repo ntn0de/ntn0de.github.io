@@ -5,6 +5,9 @@ description: "Standalone app for MacOS "
 author: 'Myself'
 date: "2025-02-04"
 ---
+
+<strong>Announcement</strong>: I'm working on a native app for MacOS. You can download MacPatroNative(Early Preview) from [here](https://github.com/ntn0de/ntn0de.github.io/raw/refs/heads/main/blogs/files/MacPatroNative.zip)
+
 # Mac Patro
 
 Mac Patro is an Electron-based desktop application that displays a Nepali calendar and other relevant information in a tray icon and a pop-up window. It is designed to run on macOS.
