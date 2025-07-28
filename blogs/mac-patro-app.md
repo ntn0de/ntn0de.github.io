@@ -7,6 +7,10 @@ date: "2025-02-04"
 ---
 
 <strong>Announcement</strong>: I'm working on a native app for MacOS. You can download MacPatroNative(Early Preview) from [here](https://github.com/ntn0de/ntn0de.github.io/raw/refs/heads/main/blogs/files/MacPatroNative.zip)
+----------------------------------------------
+### Download ([here](https://github.com/ntn0de/ntn0de.github.io/raw/refs/heads/main/blogs/files/MacPatroNative.zip))
+
+----------------------------------------------
 
 # Mac Patro
 
