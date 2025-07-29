@@ -4,7 +4,7 @@ export function BlogTitle({ blog }) {
   return (
     <h2
       className={[
-        "text-[28px] font-black",
+        "text-[28px] font-bold font-serif",
         "text-[--lightLink] dark:text-[--darkLink]",
       ].join(" ")}
     >
@@ -18,7 +18,7 @@ export function BlogTitleNoLink({ blog }) {
   return (
     <h2
       className={[
-        "text-[28px] font-black",
+        "text-[28px] font-bold font-serif",
         "text-[--lightLink] dark:text-[--darkLink]",
       ].join(" ")}
     >

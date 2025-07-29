@@ -15,7 +15,7 @@ This new native version offers significant improvements over the original Electr
 *   **Smaller Size**: The application is much more lightweight.
 *   **Universal Binary**: A single download works on both Intel and Apple Silicon Macs.
 
-![macOS Patro](./mac-patro-ss.png)
+![macOS Patro](/images/mac-patro-ss.png)
 
 The source code is now available on GitHub for you to explore, contribute to, or learn from.
 
@@ -40,13 +40,13 @@ Because the application is not yet notarized by Apple, you will likely see an er
 
 #### Error: "App is damaged and can’t be opened. You should move it to the Trash."
 
-![macOS security error message](./mac-patro-issue.jpeg)
+![macOS security error message](/images/mac-patro-issue.jpeg)
 
 This is a standard macOS security measure for applications downloaded from the internet. To fix it, you just need to remove the quarantine attribute.
 
 Open the **Terminal** app and run the following command:
 
-```bash
+```terminal
 xattr -cr /Applications/Mac\ Patro.app
 ```
 

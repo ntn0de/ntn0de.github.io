@@ -14,7 +14,7 @@ const { getBlogData, getAllBlogsPath } = require("@/app/getBlogs");
 export default function Blog({ blogData, blogContent }) {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center  py-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center p-4 sm:p-6 lg:p-8 ${inter.className}`}
     >
       <BlogContent blogData={blogData} blogContent={blogContent}/>
     </main>
@@ -37,10 +37,12 @@ export async function getStaticProps({ params }) {
         useDynamicImport: true,
         remarkPlugins: [remarkSmartpants],
         rehypePlugins: [
-          rehypePrettyCode,
-          {
-            theme: overnight,
-          },
+          [rehypePrettyCode, {
+            theme: {
+              light: 'github-light',
+              dark: overnight,
+            }
+          }],
         ],
       },
       parseFrontmatter: false,

@@ -1,27 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --font-sans: 'Roboto', sans-serif;
+  --font-serif: 'Merriweather', serif;
+
+  --rosewater: #f2d5cf;
+  --flamingo: #eebebe;
+  --pink: #f4b8e4;
+  --mauve: #ca9ee6;
+  --red: #e78284;
+  --maroon: #ea999c;
+  --peach: #ef9f76;
+  --yellow: #e5c890;
+  --green: #a6d189;
+  --teal: #81c8be;
+  --sky: #99d1db;
+  --sapphire: #85c1dc;
+  --blue: #8caaee;
+  --lavender: #babbf1;
+  --text: #4c4f69;
+  --subtext1: #5c5f77;
+  --subtext0: #6c6f85;
+  --overlay2: #7c7f93;
+  --overlay1: #8c8fa1;
+  --overlay0: #9ca0b0;
+  --surface2: #acb0be;
+  --surface1: #bcc0cc;
+  --surface0: #ccd0da;
+  --base: #eff1f5;
+  --mantle: #e6e9ef;
+  --crust: #dce0e8;
+
+  --link: #1e66f5; /* A darker blue for light mode */
+  --inlineCode-bg: var(--surface1);
+  --inlineCode-text: var(--text);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --rosewater: #f2d5cf;
+    --flamingo: #eebebe;
+    --pink: #f4b8e4;
+    --mauve: #ca9ee6;
+    --red: #e78284;
+    --maroon: #ea999c;
+    --peach: #ef9f76;
+    --yellow: #e5c890;
+    --green: #a6d189;
+    --teal: #81c8be;
+    --sky: #99d1db;
+    --sapphire: #85c1dc;
+    --blue: #8caaee;
+    --lavender: #babbf1;
+    --text: #c6d0f5;
+    --subtext1: #b5bfe2;
+    --subtext0: #a5adce;
+    --overlay2: #949cbb;
+    --overlay1: #838ba7;
+    --overlay0: #737994;
+    --surface2: #626880;
+    --surface1: #51576d;
+    --surface0: #414559;
+    --base: #303446;
+    --mantle: #292c3c;
+    --crust: #232634;
+
+    --link: var(--blue);
+    --inlineCode-bg: var(--mantle);
+    --inlineCode-text: var(--peach);
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-crust text-text font-sans;
 }
