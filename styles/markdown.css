@@ -68,7 +68,7 @@
 }
 
 .markdown blockquote {
-  @apply border-l-4 border-surface2 bg-surface1 p-4 my-4;
+  @apply border-l-4 border-peach bg-surface0 p-4 my-4 rounded-r-lg;
 }
 
 .markdown blockquote p {

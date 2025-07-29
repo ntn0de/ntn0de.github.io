@@ -17,46 +17,49 @@ This new native version offers significant improvements over the original Electr
 
 ![macOS Patro](/images/mac-patro-ss.png)
 
-The source code is now available on GitHub for you to explore, contribute to, or learn from.
+## Downloads and Source Code
 
-## **[👉---Download the Latest Version(Click here)---👈](https://github.com/ntn0de/mac-patro-native/releases/latest/download/Mac-Patro-latest.dmg)**
+> **Important:** Before you download, please [read the installation instructions](#installation-and-troubleshooting) to ensure the app runs correctly on macOS.
 
-### **[View all Releases](https://github.com/ntn0de/mac-patro-native/releases)**
-
-
-> **View the Source Code**: [github.com/ntn0de/mac-patro-native](https://github.com/ntn0de/mac-patro-native/)
+- **[Download Latest Version](https://github.com/ntn0de/mac-patro-native/releases/latest/download/Mac-Patro-latest.dmg)**
+- [View All Releases](https://github.com/ntn0de/mac-patro-native/releases)
+- [Source Code on GitHub](https://github.com/ntn0de/mac-patro-native/)
 
 ---
 
-## Installation Guide
+## Installation and Troubleshooting
 
 1.  Download the `Mac.Patro.vX.X.X.dmg` file from the [GitHub Releases page](https://github.com/ntn0de/mac-patro-native/releases).
 2.  Open the `.dmg` file.
 3.  Drag the `Mac Patro.app` icon into your `Applications` folder.
 
-### Troubleshooting
+> **A Quick Heads-Up for macOS Users**
+>
+> Because the application is not yet notarized by Apple, you might see an error message like this the first time you open it:
+>
+>
+> ![macOS security error message](/images/mac-patro-issue.jpeg)
+>
+>
+> This is a standard macOS security measure. 
+>
+> To fix it, just open the **Terminal** app and run this command:
+>
+> ```terminal
+> xattr -cr /Applications/Mac\ Patro.app
+> ```
+>
+> After running the command, the app will open without any issues.
 
-Because the application is not yet notarized by Apple, you will likely see an error message the first time you try to open it.
+## My LinkedIn Announcement
 
-#### Error: "App is damaged and can’t be opened. You should move it to the Trash."
-
-![macOS security error message](/images/mac-patro-issue.jpeg)
-
-This is a standard macOS security measure for applications downloaded from the internet. To fix it, you just need to remove the quarantine attribute.
-
-Open the **Terminal** app and run the following command:
-
-```terminal
-xattr -cr /Applications/Mac\ Patro.app
-```
-
-After running this command, the app will open without any issues.
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7355981573931905025?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
 ---
 
-## Legacy Mac Patro (Electron)
+## Legacy Version (Electron)
 
-The original version of Mac Patro was built with Electron. It is no longer in active development but remains available for download if needed.
-## If only you want to try the legacy version, here's the app:
+The original Electron version of Mac Patro is no longer in active development but remains available for download.
+
 *   [Download for Mac (Intel)](https://github.com/ntn0de/ntn0de.github.io/raw/refs/heads/main/blogs/files/Mac%20Patro-darwin-x64.zip)
 *   [Download for Mac (Apple Silicon)](https://github.com/ntn0de/ntn0de.github.io/raw/refs/heads/main/blogs/files/Mac%20Patro-darwin-arm64.zip)

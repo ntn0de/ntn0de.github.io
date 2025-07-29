@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { serialize } from "next-mdx-remote/serialize";
 import remarkSmartpants  from 'remark-smartypants';
 import rehypePrettyCode from "rehype-pretty-code";
+import rehypeSlug from "rehype-slug";
 import overnight from 'overnight/themes/Overnight-Slumber.json';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -37,6 +38,7 @@ export async function getStaticProps({ params }) {
         useDynamicImport: true,
         remarkPlugins: [remarkSmartpants],
         rehypePlugins: [
+          rehypeSlug,
           [rehypePrettyCode, {
             theme: {
               light: 'github-light',
