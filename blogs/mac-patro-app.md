@@ -36,7 +36,7 @@ Because the application is not yet notarized by Apple, you will likely see an er
 
 #### Error: "App is damaged and can’t be opened. You should move it to the Trash."
 
-![macOS security error message](./files/trouble.png)
+![macOS security error message](./mac-patro-issue.jpeg)
 
 This is a standard macOS security measure for applications downloaded from the internet. To fix it, you just need to remove the quarantine attribute.
 
