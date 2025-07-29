@@ -15,9 +15,13 @@ This new native version offers significant improvements over the original Electr
 *   **Smaller Size**: The application is much more lightweight.
 *   **Universal Binary**: A single download works on both Intel and Apple Silicon Macs.
 
+![macOS Patro](./mac-patro-ss.png)
+
 The source code is now available on GitHub for you to explore, contribute to, or learn from.
 
-### **[Download the Latest Version from GitHub Releases](https://github.com/ntn0de/mac-patro-native/releases/latest/download/Mac-Patro-latest.dmg)**
+## **[👉---Download the Latest Version(Click here)---👈](https://github.com/ntn0de/mac-patro-native/releases/latest/download/Mac-Patro-latest.dmg)**
+
+### **[View all Releases](https://github.com/ntn0de/mac-patro-native/releases)**
 
 
 > **View the Source Code**: [github.com/ntn0de/mac-patro-native](https://github.com/ntn0de/mac-patro-native/)
@@ -53,6 +57,6 @@ After running this command, the app will open without any issues.
 ## Legacy Mac Patro (Electron)
 
 The original version of Mac Patro was built with Electron. It is no longer in active development but remains available for download if needed.
-
+## If only you want to try the legacy version, here's the app:
 *   [Download for Mac (Intel)](https://github.com/ntn0de/ntn0de.github.io/raw/refs/heads/main/blogs/files/Mac%20Patro-darwin-x64.zip)
 *   [Download for Mac (Apple Silicon)](https://github.com/ntn0de/ntn0de.github.io/raw/refs/heads/main/blogs/files/Mac%20Patro-darwin-arm64.zip)
