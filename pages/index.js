@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home({ blogs }) {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center p-4 sm:p-6 lg:p-8 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center p-4 sm:p-6 lg:p-8 pt-20 pb-24 ${inter.className}`}
     >
       <Header />
       <BlogList blogs={blogs} />

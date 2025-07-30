@@ -4,7 +4,7 @@ import "../styles/markdown.css";
 import { NextSeo } from "next-seo";
 
 
-export  function BlogContent({ blogData, blogContent}) {
+export  function BlogContent({ blogData, blogContent, components }) {
   return (
     <>
       <NextSeo
@@ -21,7 +21,7 @@ export  function BlogContent({ blogData, blogContent}) {
           <span> 🗓️ {new Date(blogData.date).toDateString()}</span>
           <span> ✍️ {blogData.author}</span>
         </div>
-        <MDXRemote {...blogContent} />
+        <MDXRemote {...blogContent} components={components} />
       </div>
     </>
   );

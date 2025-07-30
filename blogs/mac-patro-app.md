@@ -53,7 +53,7 @@ This new native version offers significant improvements over the original Electr
 
 ## My LinkedIn Announcement
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7355981573931905025?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+<ResponsiveIframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7355981573931905025?compact=1" title="Embedded post" />
 
 ---
 
