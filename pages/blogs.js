@@ -10,6 +10,7 @@ export default function Blogs({ blogs }) {
       <NextSeo 
         title="Journal"
         description="Technical insights, architectural decisions, and Shopify growth strategies shared by Er. Saroj Subedi."
+        canonical="https://ersaroj.com.np/blogs"
       />
       <main
         className="flex min-h-screen flex-col p-4 sm:p-6 lg:p-8 pt-20 pb-24 overflow-x-hidden"

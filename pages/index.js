@@ -10,6 +10,7 @@ export default function Home() {
       <NextSeo 
         title="Home"
         description="Engineering high-growth Shopify storefronts and complex full-stack systems. Specialized in custom apps, architecture, and performance engineering."
+        canonical="https://ersaroj.com.np"
       />
       <main
         className="flex min-h-screen flex-col p-4 sm:p-6 lg:p-8 pt-20 pb-24 overflow-x-hidden"

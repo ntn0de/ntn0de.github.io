@@ -12,9 +12,11 @@ export function BlogContent({ blogData, blogContent, components }) {
       <NextSeo
         title={blogData.title}
         description={blogData.description}
+        canonical={`https://ersaroj.com.np/blog/${blogData.id}`}
         openGraph={{
           title: blogData.title,
           description: blogData.description,
+          url: `https://ersaroj.com.np/blog/${blogData.id}`,
         }}
       />
       <Header />

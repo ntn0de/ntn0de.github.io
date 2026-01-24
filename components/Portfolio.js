@@ -24,7 +24,7 @@ const workExperiences = [
   {
     company: "Plantura GmbH",
     location: "Munich, Germany",
-    position: "Senior Software Developer (Web)",
+    position: "Software Developer (Web)",
     period: "03/2023 - Now",
     skills: ["Shopify", "React", "Node.js", "TypeScript", "Python", "RemixJS", "Cloudflare"],
     description: "Building high-traffic Shopify platform serving 700k+ monthly users. Developed custom apps for order cancellation and wishlists. Led the migration of legacy Shopify Scripts to Shopify Functions and implemented Checkout Extensibility to modernize the store's architecture."
