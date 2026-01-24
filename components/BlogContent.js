@@ -58,7 +58,7 @@ export function BlogContent({ blogData, blogContent, components }) {
         <div className="mt-20 pt-12 border-t border-text/5">
            <div className="bg-surface0 rounded-3xl p-8 sm:p-12 text-center border border-text/5">
               <h3 className="text-2xl font-serif font-light mb-6">Found this helpful?</h3>
-              <p className="text-subtext0 mb-8 max-w-md mx-auto">I share technical insights and Shopify growth strategies regularly. Let's connect if you're building something great.</p>
+              <p className="text-subtext0 mb-8 max-w-md mx-auto">I share technical insights and Shopify growth strategies regularly. Let&apos;s connect if you&apos;re building something great.</p>
               <a
                 href="mailto:imsarojsubedi@gmail.com"
                 className="inline-flex items-center gap-2 px-8 py-3 bg-text text-base text-[11px] font-bold uppercase tracking-wider rounded-xl hover:bg-[#96BF48] hover:text-text transition-all"

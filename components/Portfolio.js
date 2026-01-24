@@ -294,7 +294,7 @@ export default function Portfolio() {
           href="mailto:imsarojsubedi@gmail.com"
           className="inline-flex items-center gap-3 px-10 py-5 bg-[#96BF48] text-base font-bold rounded-xl hover:bg-[#86ab40] transition-all hover:scale-110 active:scale-95 shadow-xl"
         >
-          Let's Build Together
+          Let&apos;s Build Together
           <MdArrowForward className="w-6 h-6" />
         </a>
       </div>

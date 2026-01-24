@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   return (
@@ -10,12 +11,15 @@ export default function Document() {
           href="/favicon.png"
           type="image/png"
         />
-        {/* Google Analytics */}
-        <script
-          async
+      </Head>
+      <body>
+        <Script
+          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-3YYQL3HBTR"
         />
-        <script
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -25,8 +29,6 @@ export default function Document() {
             `,
           }}
         />
-      </Head>
-      <body>
         <Main />
         <NextScript />
       </body>

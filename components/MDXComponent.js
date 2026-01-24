@@ -1,5 +1,7 @@
 import Link from "next/link";
 
-export default {
+const components = {
   a: Link
 };
+
+export default components;
