@@ -1,41 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Epilogue:wght@300;400;500;600;700;800&family=Fira+Code&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --font-sans: 'Roboto', sans-serif;
-  --font-serif: 'Merriweather', serif;
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+:root {
+  --font-sans: 'Epilogue', sans-serif;
+  --font-serif: 'Averia Serif Libre', serif;
+
+  /* Nepali-inspired color palette */
+  --saffron: #FF8C42;        /* Sacred saffron - traditional */
+  --deep-saffron: #FF6B35;   /* Deep saffron orange */
+  --crimson: #DC143C;        /* Deep red - traditional */
+  --maroon: #8B1538;         /* Deep maroon - flag color */
+  --gold: #FFD700;            /* Auspicious gold */
+  --warm-gold: #F4A460;       /* Warm golden tone */
+  --himalayan-blue: #4A90E2;  /* Sky blue - mountain sky */
+  --earth-brown: #8B4513;     /* Terracotta earth */
+  --forest-green: #2D5016;    /* Mountain forest */
+  --warm-cream: #FFF8E7;      /* Warm cream background */
+  --soft-beige: #F5E6D3;      /* Soft beige */
+  
+  /* Legacy colors for compatibility */
   --rosewater: #f2d5cf;
   --flamingo: #eebebe;
   --pink: #f4b8e4;
   --mauve: #ca9ee6;
-  --red: #e78284;
-  --maroon: #ea999c;
-  --peach: #ef9f76;
-  --yellow: #e5c890;
-  --green: #a6d189;
+  --red: #DC143C;
+  --peach: #FF8C42;
+  --yellow: #FFD700;
+  --green: #2D5016;
   --teal: #81c8be;
-  --sky: #99d1db;
-  --sapphire: #85c1dc;
-  --blue: #8caaee;
+  --sky: #4A90E2;
+  --sapphire: #4A90E2;
+  --blue: #4A90E2;
+  --orange: #FF8C42;
+  --warm-orange: #FF6B35;
+  --light-blue: #4A90E2;
   --lavender: #babbf1;
-  --text: #4c4f69;
-  --subtext1: #5c5f77;
-  --subtext0: #6c6f85;
-  --overlay2: #7c7f93;
-  --overlay1: #8c8fa1;
-  --overlay0: #9ca0b0;
-  --surface2: #acb0be;
-  --surface1: #bcc0cc;
-  --surface0: #ccd0da;
-  --base: #eff1f5;
-  --mantle: #e6e9ef;
-  --crust: #dce0e8;
+  
+  /* Text colors - minimal, refined */
+  --text: #0a0a0a;            /* Deep charcoal - darker for better contrast */
+  --subtext1: #2a2a2a;        /* Medium gray - darker for readability */
+  --subtext0: #4a4a4a;         /* Light gray - darker for readability */
+  --overlay2: #8a8a8a;
+  --overlay1: #a0a0a0;
+  --overlay0: #b5b5b5;
+  
+  /* Surface colors - minimal, clean */
+  --surface2: #fafafa;         /* Very light gray */
+  --surface1: #f5f5f5;         /* Light gray */
+  --surface0: #f0f0f0;         /* Slightly darker gray */
+  --base: #ffffff;             /* Pure white */
+  --mantle: #fafafa;           /* Very light */
+  --crust: #f5f5f5;            /* Light gray */
 
-  --link: #1e66f5; /* A darker blue for light mode */
+  --link: #1a1a1a;            /* Minimal dark for links */
   --inlineCode-bg: var(--surface1);
   --inlineCode-text: var(--text);
 }
@@ -47,36 +77,41 @@
     --pink: #f4b8e4;
     --mauve: #ca9ee6;
     --red: #e78284;
+    
+    /* Text colors - darker mode with better contrast */
+    --text: #e8e8e8;            /* Light text for dark background */
+    --subtext1: #c8c8c8;        /* Medium light gray */
+    --subtext0: #a8a8a8;         /* Light gray - more visible */
     --maroon: #ea999c;
-    --peach: #ef9f76;
+    --peach: #ff8c42;
     --yellow: #e5c890;
     --green: #a6d189;
     --teal: #81c8be;
-    --sky: #99d1db;
-    --sapphire: #85c1dc;
-    --blue: #8caaee;
+    --sky: #A8D5E2;
+    --sapphire: #7FB3D3;
+    --blue: #7FB3D3;
+    --orange: #FF7043;
+    --warm-orange: #FF6B35;
+    --light-blue: #A8D5E2;
     --lavender: #babbf1;
-    --text: #c6d0f5;
-    --subtext1: #b5bfe2;
-    --subtext0: #a5adce;
-    --overlay2: #949cbb;
-    --overlay1: #838ba7;
-    --overlay0: #737994;
-    --surface2: #626880;
-    --surface1: #51576d;
-    --surface0: #414559;
-    --base: #303446;
-    --mantle: #292c3c;
-    --crust: #232634;
+    --overlay2: #b5bfe2;
+    --overlay1: #a5adce;
+    --overlay0: #949cbb;
+    --surface2: #3b4252;
+    --surface1: #434c5e;
+    --surface0: #4c566a;
+    --base: #2e3440;
+    --mantle: #3b4252;
+    --crust: #434c5e;
 
-    --link: var(--blue);
+    --link: #FF7043;
     --inlineCode-bg: var(--mantle);
     --inlineCode-text: var(--peach);
   }
 }
 
 body {
-  @apply bg-crust text-text font-sans;
+  @apply bg-base text-text font-sans;
 }
 
 .responsive-iframe-container {
@@ -92,4 +127,336 @@ body {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/* Floating icon animations */
+@keyframes float-0 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(20px, -30px) rotate(5deg);
+  }
+  50% {
+    transform: translate(-10px, 20px) rotate(-5deg);
+  }
+  75% {
+    transform: translate(30px, 10px) rotate(3deg);
+  }
+}
+
+@keyframes float-1 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(-25px, 25px) rotate(-8deg);
+  }
+  66% {
+    transform: translate(25px, -20px) rotate(8deg);
+  }
+}
+
+@keyframes float-2 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(15px, -25px) rotate(6deg);
+  }
+  40% {
+    transform: translate(-20px, 15px) rotate(-6deg);
+  }
+  60% {
+    transform: translate(25px, 20px) rotate(4deg);
+  }
+  80% {
+    transform: translate(-15px, -10px) rotate(-4deg);
+  }
+}
+
+.floating-icon {
+  will-change: transform;
+}
+
+/* Glow animation for hero text - left to right sweep */
+@keyframes glow-sweep {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.glow-text {
+  background: linear-gradient(
+    135deg,
+    var(--subtext1) 0%,
+    var(--subtext1) 48%,
+    var(--text) 50%,
+    var(--subtext1) 52%,
+    var(--subtext1) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow-sweep 8s linear infinite;
+  color: var(--subtext1); /* Fallback for browsers that don't support background-clip */
+}
+
+/* Nepali-inspired decorative elements */
+.nepali-accent {
+  position: relative;
+}
+
+.nepali-accent::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: var(--deep-saffron);
+  border-radius: 50%;
+  box-shadow: 
+    0 0 0 2px var(--warm-cream),
+    0 0 0 4px var(--deep-saffron);
+}
+
+.nepali-accent::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: var(--deep-saffron);
+  border-radius: 50%;
+  box-shadow: 
+    0 0 0 2px var(--warm-cream),
+    0 0 0 4px var(--deep-saffron);
+}
+
+/* Art-focused decorative elements */
+.artistic-line {
+  position: relative;
+}
+
+.artistic-line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, currentColor, transparent);
+  opacity: 0.3;
+}
+
+/* Flowing curve decoration */
+.flowing-curve {
+  position: relative;
+  overflow: hidden;
+}
+
+.flowing-curve::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    currentColor 20%,
+    currentColor 80%,
+    transparent 100%
+  );
+  opacity: 0.2;
+  transform: scaleX(0);
+  animation: curve-expand 2s ease-out forwards;
+}
+
+@keyframes curve-expand {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Artistic underline with curve */
+.artistic-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.artistic-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.2;
+  clip-path: path('M 0,1 Q 25,0 50,1 T 100,1');
+}
+
+/* Decorative corner accent */
+.decorative-corner {
+  position: relative;
+}
+
+.decorative-corner::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 24px;
+  height: 24px;
+  border-top: 1px solid currentColor;
+  border-left: 1px solid currentColor;
+  opacity: 0.15;
+}
+
+.decorative-corner::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  width: 24px;
+  height: 24px;
+  border-bottom: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  opacity: 0.15;
+}
+
+/* Organic flowing shapes */
+@keyframes organic-flow {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(10px, -15px) rotate(5deg);
+  }
+  50% {
+    transform: translate(-5px, 10px) rotate(-3deg);
+  }
+  75% {
+    transform: translate(15px, 5px) rotate(2deg);
+  }
+}
+
+.organic-shape {
+  animation: organic-flow 20s ease-in-out infinite;
+}
+
+/* Artistic text gradient */
+.artistic-text {
+  background: linear-gradient(
+    135deg,
+    var(--text) 0%,
+    var(--text) 45%,
+    var(--subtext1) 50%,
+    var(--text) 55%,
+    var(--text) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Decorative line pattern */
+.line-pattern {
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    currentColor 2px,
+    currentColor 4px
+  );
+  opacity: 0.05;
+}
+
+/* Curved divider */
+.curved-divider {
+  position: relative;
+  height: 1px;
+  overflow: visible;
+}
+
+.curved-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.2;
+  clip-path: path('M 0,1 Q 50,0 100,1');
+}
+
+/* Artistic border with curves */
+.artistic-border {
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.artistic-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border: 1px solid currentColor;
+  opacity: 0.1;
+  border-radius: 8px;
+  clip-path: polygon(
+    0% 0%, 
+    100% 0%, 
+    100% 100%, 
+    0% 100%,
+    0% 20px,
+    4px 20px,
+    4px calc(100% - 20px),
+    0% calc(100% - 20px)
+  );
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
+  }
+  .animate-fade-in-left {
+    animation: fade-in-left 0.8s ease-out forwards;
+  }
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in-left {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
 }

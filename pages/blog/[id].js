@@ -1,5 +1,4 @@
 import { BlogContent } from "@/components/BlogContent";
-import { Inter } from "next/font/google";
 import ResponsiveIframe from "@/components/ResponsiveIframe";
 
 import { serialize } from "next-mdx-remote/serialize";
@@ -8,20 +7,22 @@ import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import overnight from 'overnight/themes/Overnight-Slumber.json';
 
-const inter = Inter({ subsets: ["latin"] });
 overnight.colors["editor.background"] = "var(--code-bg)";
 
-const { getBlogData, getAllBlogsPath } = require("@/app/getBlogs");
+import { getBlogData, getAllBlogsPath } from "@/app/getBlogs";
 
 export default function Blog({ blogData, blogContent }) {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center p-4 sm:p-6 lg:p-8 pt-20 pb-24 ${inter.className}`}
+      className="flex min-h-screen flex-col p-4 sm:p-6 lg:p-8 pt-20 pb-24 overflow-x-hidden"
     >
-      <BlogContent blogData={blogData} blogContent={blogContent} components={{ResponsiveIframe}}/>
+      <div className="w-full max-w-4xl mx-auto">
+        <BlogContent blogData={blogData} blogContent={blogContent} components={{ResponsiveIframe}}/>
+      </div>
     </main>
   );
 }
+
 export async function getStaticPaths() {
   const blogPaths = getAllBlogsPath();
   return {

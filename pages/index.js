@@ -1,25 +1,32 @@
-import { Inter } from "next/font/google";
 import Header from "../components/Header";
-import BlogList from "../components/BlogList";
-import { getBlogs } from "@/app/getBlogs";
+import Hero from "../components/Hero";
+import Stats from "../components/Stats";
+import Portfolio from "../components/Portfolio";
+import { NextSeo } from "next-seo";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home({ blogs }) {
+export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center p-4 sm:p-6 lg:p-8 pt-20 pb-24 ${inter.className}`}
-    >
-      <Header />
-      <BlogList blogs={blogs} />
-    </main>
+    <>
+      <NextSeo 
+        title="Home"
+        description="Engineering high-growth Shopify storefronts and complex full-stack systems. Specialized in custom apps, architecture, and performance engineering."
+      />
+      <main
+        className="flex min-h-screen flex-col p-4 sm:p-6 lg:p-8 pt-20 pb-24 overflow-x-hidden"
+      >
+        <div className="w-full max-w-4xl mx-auto">
+          <Header />
+          <div className="mt-12 lg:mt-20">
+            <Hero />
+          </div>
+          <div className="mt-20 lg:mt-32">
+            <Stats />
+          </div>
+          <div className="mt-24">
+            <Portfolio />
+          </div>
+        </div>
+      </main>
+    </>
   );
-}
-export async function getStaticProps() {
-  const blogs = await getBlogs();
-  return {
-    props: {
-      blogs,
-    },
-  };
 }

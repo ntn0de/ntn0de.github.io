@@ -8,11 +8,11 @@
 }
 
 .markdown p {
-  @apply pb-4;
+  @apply pb-6 text-base text-subtext0 font-normal leading-relaxed;
 }
 
 .markdown a {
-  @apply border-b-[1px] border-[var(--link)] text-[var(--link)] transition-all duration-300;
+  @apply border-b border-text text-text hover:opacity-70 transition-opacity font-normal;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,7 +22,7 @@
 }
 
 .markdown hr {
-  @apply pt-8 opacity-60 dark:opacity-10;
+  @apply my-12 border-0 border-t border-subtext0 border-opacity-20;
 }
 
 .markdown h1, .markdown h2, .markdown h3, .markdown h4 {
@@ -30,45 +30,80 @@
 }
 
 .markdown h1 {
-  @apply mt-2 pb-4 text-4xl font-bold;
+  @apply mt-12 mb-6 text-3xl font-light tracking-tight;
 }
 .markdown h2 {
-  @apply mt-2 pb-4 text-3xl font-bold;
+  @apply mt-10 mb-4 text-2xl font-light tracking-tight;
 }
 
 .markdown h3 {
-  @apply mt-2 pb-4 text-2xl font-bold;
+  @apply mt-8 mb-3 text-xl font-light tracking-tight;
 }
 
 .markdown h4 {
-  @apply mt-2 pb-4 text-xl font-bold;
+  @apply mt-6 mb-2 text-lg font-light tracking-tight;
 }
 
 .markdown :not(pre) > code {
-  border-radius: 10px;
-  background: var(--inlineCode-bg);
-  color: var(--inlineCode-text);
-  padding: 0.15em 0.2em 0.05em;
+  border-radius: 4px;
+  background: var(--surface1);
+  color: var(--text);
+  padding: 0.15em 0.35em;
+  font-size: 0.875em;
+  font-weight: 400;
+  font-family: 'Fira Code', monospace;
   white-space: normal;
+  border: 1px solid var(--surface2);
 }
 
 .markdown pre {
-  @apply mb-4 overflow-y-auto p-4 text-sm;
-  clip-path: var(--path);
-  border-top-right-radius: var(--radius-top);
-  border-top-left-radius: var(--radius-top);
-  border-bottom-right-radius: var(--radius-bottom);
-  border-bottom-left-radius: var(--radius-bottom);
-  padding-top: var(--padding-top);
-  padding-bottom: var(--padding-bottom);
+  @apply mb-8 overflow-x-auto;
+  background: var(--surface1) !important;
+  border: 1px solid var(--surface2) !important;
+  border-radius: 8px;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  font-family: 'Fira Code', monospace;
 }
 
 .markdown pre code {
   width: auto;
+  background: transparent !important;
+  padding: 0;
+  border: none;
+  color: var(--text) !important;
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* Force consistent colors for all syntax highlighted elements */
+.markdown pre code,
+.markdown pre code * {
+  color: var(--text) !important;
+}
+
+/* Override any syntax highlighting theme colors */
+.markdown pre[data-theme*="light"],
+.markdown pre[data-theme*="dark"],
+.markdown pre[data-language] {
+  background: var(--surface1) !important;
+}
+
+.markdown pre code .token,
+.markdown pre code span[class*="token"],
+.markdown pre code span[class*="line"] {
+  color: var(--text) !important;
+}
+
+/* Ensure all code blocks have same background regardless of language */
+.markdown pre:not([data-language="terminal"]) {
+  background: var(--surface1) !important;
+  border: 1px solid var(--surface2) !important;
 }
 
 .markdown blockquote {
-  @apply border-l-4 border-peach bg-surface0 p-4 my-4 rounded-r-lg;
+  @apply border-l-2 border-text border-opacity-20 pl-6 my-8 italic text-subtext0 font-normal;
 }
 
 .markdown blockquote p {
@@ -81,7 +116,7 @@
 }
 
 .markdown ul, .markdown ol {
-  @apply pl-8 my-4;
+  @apply pl-6 my-6;
 }
 
 .markdown ul {
@@ -93,40 +128,45 @@
 }
 
 .markdown li {
-  @apply mb-2;
+  @apply mb-3 text-subtext0 font-normal leading-relaxed;
 }
 
 .markdown img {
-  @apply mb-4;
+  @apply mb-8 mt-4;
   max-width: 100%;
+  border-radius: 4px;
 }
 
 .markdown pre[data-language="terminal"] {
-  @apply bg-base dark:bg-crust bg-opacity-80 backdrop-blur-sm rounded-lg font-mono text-sm relative border border-overlay0;
+  @apply bg-text text-base relative;
   font-family: 'Fira Code', monospace;
-  padding-top: 3rem; /* Make space for the header */
+  padding-top: 2.5rem;
+  border: 1px solid var(--text);
 }
 
 .markdown pre[data-language="terminal"]:before {
   content: '';
-  @apply absolute top-0 left-0 w-full h-8 bg-surface0 rounded-t-lg;
+  @apply absolute top-0 left-0 w-full h-10 bg-text;
+  border-radius: 8px 8px 0 0;
 }
 
 .markdown pre[data-language="terminal"]:after {
   content: '';
-  @apply absolute top-3 left-3 w-3 h-3 rounded-full bg-red;
-  box-shadow: 1.5em 0 0 var(--yellow), 3em 0 0 var(--green);
+  @apply absolute top-3 left-4 w-2.5 h-2.5 rounded-full;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 1.25em 0 0 rgba(255, 255, 255, 0.3), 2.5em 0 0 rgba(255, 255, 255, 0.3);
 }
 
 .markdown pre[data-language="terminal"] code {
-  @apply block;
+  @apply block text-base;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .markdown pre [data-highlighted-line] {
-  margin-left: -16px;
-  padding-left: 12px;
-  border-left: 4px solid var(--red);
-  background-color: var(--surface0);
+  margin-left: -1.5rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--text);
+  background-color: var(--surface2);
   display: block;
   padding-right: 1em;
 }
