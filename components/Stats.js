@@ -2,7 +2,7 @@ import { useRef } from "react";
 
 const stats = [
   { number: "9+", label: "Years Experience", description: "Building for web" },
-  { number: "100+", label: "Projects", description: "Delivered" },
+  { number: "40+", label: "Projects", description: "Delivered" },
 ];
 
 export default function Stats() {
@@ -31,7 +31,7 @@ export default function Stats() {
             <div className="relative inline-block mb-4">
               <div className="absolute inset-0 rounded-full border-2 border-text/10 group-hover:border-[#96BF48]/20 group-hover:scale-110 transition-all duration-500"></div>
               <div className="relative">
-                <div className="text-5xl sm:text-6xl md:text-7xl font-light font-serif text-text leading-none group-hover:text-[#96BF48] transition-colors duration-500">
+                <div className="text-5xl sm:text-6xl md:text-7xl font-light font-serif text-text leading-none group-hover:text-[#96BF48] transition-colors duration-500 p-4">
                   {stat.number}
                 </div>
               </div>

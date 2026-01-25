@@ -50,7 +50,7 @@ module.exports = {
         surface2: 'var(--surface2)',
         surface1: 'var(--surface1)',
         surface0: 'var(--surface0)',
-        base: 'var(--base)',
+        base: 'rgb(var(--base) / <alpha-value>)',
         mantle: 'var(--mantle)',
         crust: 'var(--crust)',
       },

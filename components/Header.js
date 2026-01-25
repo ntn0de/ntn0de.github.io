@@ -28,7 +28,7 @@ export default function Header() {
         
         <a
           href="mailto:imsarojsubedi@gmail.com"
-          className="whitespace-nowrap px-2.5 sm:px-3 py-1.5 bg-text text-base text-[9px] sm:text-[10px] font-bold uppercase tracking-wider rounded-full hover:bg-[#96BF48] hover:text-text transition-all"
+          className="whitespace-nowrap px-3 py-1 bg-text text-surface0 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider rounded-full hover:bg-[#96BF48] hover:text-text transition-all"
         >
           Hire Me
         </a>

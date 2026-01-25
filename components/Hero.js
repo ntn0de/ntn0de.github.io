@@ -2,8 +2,15 @@ import Image from "next/image";
 import { SiGithub, SiLinkedin, SiShopify } from "react-icons/si";
 import { MdEmail, MdArrowForward } from "react-icons/md";
 import { FaTwitter } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
 export default function Hero() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <section className="w-full max-w-4xl mb-32 relative">
       {/* Structural background elements - subtle and modern */}
@@ -14,8 +21,12 @@ export default function Hero() {
         {/* Portrait - Now visible on mobile and ordered first */}
         <div className="opacity-0 animate-fade-in stagger-3 relative group transition-all duration-1000 ease-out order-first lg:order-last">
           {/* Geometrical frames around portrait */}
-          <div className="absolute -inset-4 sm:-inset-6 border border-[#96BF48]/10 rounded-[1.5rem] sm:rounded-[2rem] transform rotate-6 group-hover:rotate-2 transition-transform duration-1000" />
-          <div className="absolute -inset-4 sm:-inset-6 border border-text/5 rounded-[1.5rem] sm:rounded-[2rem] transform -rotate-6 group-hover:-rotate-2 transition-transform duration-1000" />
+          <div className={`absolute -inset-4 sm:-inset-6 border border-[#96BF48]/10 rounded-[1.5rem] sm:rounded-[2rem] transform transition-all duration-1000 ${
+            mounted ? "rotate-6 opacity-100" : "rotate-0 opacity-0"
+          } group-hover:rotate-2`} />
+          <div className={`absolute -inset-4 sm:-inset-6 border border-text/5 rounded-[1.5rem] sm:rounded-[2rem] transform transition-all duration-1000 ${
+            mounted ? "-rotate-6 opacity-100" : "rotate-0 opacity-0"
+          } group-hover:-rotate-2`} />
           
           <div className="relative w-48 h-60 sm:w-64 sm:h-80 md:w-72 md:h-96 rounded-[1.2rem] sm:rounded-[1.5rem] overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.2)] border border-text/10 z-10 bg-surface0 mx-auto">
             <Image
@@ -73,7 +84,7 @@ export default function Hero() {
           </div>
 
           <p className="opacity-0 animate-fade-up stagger-3 text-lg sm:text-xl text-subtext0 max-w-2xl leading-relaxed font-normal mx-auto lg:mx-0">
-            Helping high-volume merchants overcome technical limits. From architecting <span className="text-text font-medium underline decoration-[#96BF48]/30">Shopify Functions</span> and <span className="text-text font-medium underline decoration-[#96BF48]/30">Checkout Extensibility</span> to deep <span className="text-text font-medium underline decoration-[#96BF48]/30">ERP integrations</span>, I build robust systems that convert browsers into loyal customers.
+            Helping high-volume merchants overcome technical limits. From architecting <span className="text-text font-medium underline decoration-[#96BF48]/30">Custom Shopify Apps</span>, <span className="text-text font-medium underline decoration-[#96BF48]/30">Shopify Functions</span> and <span className="text-text font-medium underline decoration-[#96BF48]/30">Checkout Extensibility</span> to deep <span className="text-text font-medium underline decoration-[#96BF48]/30">ERP integrations</span>, I build robust systems that convert browsers into loyal customers.
           </p>
 
           <div className="opacity-0 animate-fade-up stagger-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">

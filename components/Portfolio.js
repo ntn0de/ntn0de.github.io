@@ -18,7 +18,11 @@ import {
   SiCloudflare,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
-import { MdArrowForward } from "react-icons/md";
+import { MdArrowForward, MdOutlineAutoAwesomeMotion } from "react-icons/md";
+import { GiCargoCrane } from "react-icons/gi";
+import { CgWebsite } from "react-icons/cg";
+// import { GrDocumentPerformance } from "react-icons/gr";
+import { CgPerformance } from "react-icons/cg";
 
 const workExperiences = [
   {
@@ -119,25 +123,25 @@ const services = [
     title: "Product Engineering",
     description: "Building production-grade web applications and SaaS platforms that solve complex business challenges. From rapid prototyping to scalable deployments.",
     capabilities: ["SaaS Development", "Custom Shopify Apps", "Internal Business Tools", "API Design & Dev"],
-    icon: "🛠️"
+    icon: <CgWebsite/>
   },
   {
     title: "System Architecture",
     description: "Designing resilient digital ecosystems for high-volume operations. Specialized in bridging disparate systems into a unified, high-performance workflow.",
     capabilities: ["ERP/CRM Integrations", "Middleware Engineering", "Cloud Infrastructure (CF/AWS)", "Legacy Modernization"],
-    icon: "🏗️"
+    icon: <GiCargoCrane/>
   },
   {
     title: "Performance Engineering",
     description: "Optimizing the entire technical stack for speed and conversion. Reducing friction points to turn technical metrics into commercial growth.",
     capabilities: ["Core Web Vitals", "Database Optimization", "Headless Architecture", "Checkout Optimization"],
-    icon: "⚡"
+    icon: <CgPerformance/>
   },
   {
     title: "Lifecycle Automation",
     description: "Scaling revenue through intelligent automation. Building data-driven EDM systems and custom workflows that nurture leads and drive repeat sales.",
     capabilities: ["EDM Strategy (Klaviyo)", "Business Process Automation", "CRM Synchronization", "Lifecycle Flow Design"],
-    icon: "🤖"
+    icon: <MdOutlineAutoAwesomeMotion/>
   }
 ];
 
@@ -159,22 +163,22 @@ export default function Portfolio() {
               key={index}
               className={`p-6 sm:p-8 border border-text/10 bg-surface0 rounded-3xl hover:border-[#96BF48]/30 transition-all group opacity-0 animate-fade-up stagger-${index + 1} flex flex-col h-full hover:shadow-xl`}
             >
-              <div className="text-4xl mb-6 group-hover:scale-110 transition-transform origin-left inline-block">
+              <div className="text-4xl mb-6 group-hover:scale-110 transition-transform origin-left inline-block text-[#96BF48]">
                 {service.icon}
               </div>
               <h3 className="text-xl font-serif font-medium mb-4 group-hover:text-[#96BF48] transition-colors">
                 {service.title}
               </h3>
-              <p className="text-subtext0 text-sm leading-relaxed mb-8">
+              <p className="text-text text-base leading-relaxed mb-8">
                 {service.description}
               </p>
               
-              <div className="mt-auto pt-6 border-t border-text/5">
-                <p className="text-[10px] font-bold text-text uppercase tracking-widest mb-4 opacity-50">Core Capabilities</p>
-                <ul className="space-y-2">
+              <div className="mt-auto pt-6 border-t border-text/10">
+                <p className="text-xs font-bold text-text uppercase tracking-widest mb-4">Core Capabilities</p>
+                <ul className="space-y-3">
                   {service.capabilities.map((cap, i) => (
-                    <li key={i} className="flex items-center gap-2 text-xs text-subtext0">
-                      <span className="w-1 h-1 rounded-full bg-[#96BF48]" />
+                    <li key={i} className="flex items-center gap-3 text-sm text-text">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#96BF48]" />
                       {cap}
                     </li>
                   ))}
@@ -211,7 +215,7 @@ export default function Portfolio() {
                   </span>
                 </div>
                 
-                <p className="text-lg text-subtext0 mb-8 max-w-2xl leading-relaxed">
+                <p className="text-lg text-text text-base mb-8 max-w-2xl leading-relaxed">
                   {project.description}
                 </p>
 
