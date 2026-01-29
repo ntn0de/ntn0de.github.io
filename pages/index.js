@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <>
       <NextSeo 
-        title="Home"
         description="Engineering high-growth Shopify storefronts and complex full-stack systems. Specialized in custom apps, architecture, and performance engineering."
         canonical="https://ersaroj.com.np"
       />

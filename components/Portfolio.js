@@ -31,23 +31,47 @@ const workExperiences = [
     position: "Software Developer (Web)",
     period: "03/2023 - Now",
     skills: ["Shopify", "React", "Node.js", "TypeScript", "Python", "RemixJS", "Cloudflare"],
-    description: "Building high-traffic Shopify platform serving 700k+ monthly users. Developed custom apps for order cancellation and wishlists. Led the migration of legacy Shopify Scripts to Shopify Functions and implemented Checkout Extensibility to modernize the store's architecture."
+    description: "Developed and maintained the e-commerce store (700k+ monthly users) on Shopify and Alpine JS. Built custom apps: Checkout Extensions, Wishlist, and Order Cancellation using React and Node.js. Developed APIs for Plantura Mobile App (1M+ downloads) and ERP (Odoo). Engineered a PIM script with Node.js, SQL, and Python; implemented GTM server-side tagging for 50+ events; unified header/footer across Plantura Magazine (WordPress) and Shop. Built GitHub Actions for theme deployment across 7 environments and Playwright e2e framework (~150 tests, 5 browsers, 3 locales). Contribute to technical interviews, code reviews, and CI/CD pipelines."
   },
   {
     company: "Performance PODs",
     location: "Sydney, NSW",
-    position: "Lead Developer",
+    position: "Developer Team Lead",
     period: "04/2020 - 11/2022",
     skills: ["Laravel", "React", "Node.js", "AWS", "WordPress", "WooCommerce", "Tailwind CSS"],
-    description: "Built scalable eCommerce architectures and custom Shopify apps for Australian brands. Optimized store performance and checkout flows, directly impacting merchant revenue."
+    description: "Steered development of high-impact projects: in-house Assets Management System (Laravel, React, AWS S3/Elastic Beanstalk) and vehicle classifier Shopify App. Converted Figma designs into SPAs with React and Node. Integrated third-party APIs and custom WordPress/WooCommerce plugins. Mentored junior developers, led code reviews and design decisions, and collaborated with product and cross-functional distributed teams. Fostered inclusive team leadership, meetings, and learning opportunities."
   },
   {
     company: "B Technology",
-    location: "Kathmandu",
-    position: "Software Consultant",
+    location: "Gairidhara, Kathmandu",
+    position: "Software Development Consultant",
     period: "05/2021 - 11/2021",
     skills: ["Java", "Spring Boot", "MySQL"],
-    description: "Architected a custom Agricultural Trade eCommerce platform from the ground up, focusing on high-performance order processing and inventory synchronization."
+    description: "Gathered business requirements and developed an Agriculture Trade e-commerce application using Java, Spring Boot, and MySQL. Optimized with caching; integrated third-party logistics for real-time order tracking. Designed conversion optimization and UX best practices to increase conversion rate."
+  },
+  {
+    company: "Genesis Web Technology Pvt. Ltd",
+    location: "Sankhamul, Kathmandu",
+    position: "Backend Developer",
+    period: "05/2019 - 04/2020",
+    skills: ["PHP", "Laravel", "Vue.js", "WordPress", "MySQL"],
+    description: "Converted legacy PHP 5 application to PHP 7 and integrated travels booking system with WordPress via API. Delivered Job Portal with News Portal (Laravel, Vue.js). Authored custom themes for business, news, travel, and trekking; built booking management plugins and technical SEO that raised organic traffic and rankings."
+  },
+  {
+    company: "EIS Nepal",
+    location: "Gyaneswor, Kathmandu",
+    position: "Tech and QA Lead",
+    period: "06/2018 - 02/2019",
+    skills: ["PHP", "MySQL"],
+    description: "Planned and implemented a school management system from requirements. Conducted feasibility studies that reduced unnecessary features and costs. Maintained QA for consistent UI/UX across all features and functionalities."
+  },
+  {
+    company: "Phi L'Agence Pvt. Ltd",
+    location: "Chakupat, Lalitpur",
+    position: "Web Developer",
+    period: "12/2016 - 06/2018",
+    skills: ["WordPress", "WooCommerce", "Laravel", "PHP", "MySQL"],
+    description: "Assisted lead developer in developing and deploying website applications on time. Created an online store for electronic items with WordPress and WooCommerce. Delivered 10+ small-scale web projects and one large-scale Laravel application."
   }
 ];
 
@@ -102,10 +126,10 @@ const education = [
 const projects = [
   {
     name: "Order Undo",
-    type: "Enterprise Shopify App",
+    type: "Shopify App",
     description: "A conversion-recovery tool that allows customers to edit or cancel orders post-purchase. Dramatically reduces support overhead and improves customer retention.",
     link: "https://apps.shopify.com/order-undo",
-    skills: ["Shopify", "React", "Node.js", "GraphQL", "App Bridge"],
+    skills: ["Shopify", "React", "RemixJS", "Customer Accounts" , "Orders"],
     status: "Published"
   },
   {
@@ -113,6 +137,14 @@ const projects = [
     type: "Native Productivity",
     description: "High-performance native macOS calendar integration. Focused on seamless UX and system-level performance. Used by thousands of daily active users.",
     link: "https://github.com/ntn0de/mac-patro-native",
+    skills: ["Swift", "macOS", "AppKit"],
+    status: "Open Source"
+  },
+  {
+    name: "Blink Reminder",
+    type: "Native Productivity",
+    description: "A minimal native macOS menu bar app that reduces digital eye strain by reminding you to blink and look away (20-20-20 rule). Customizable intervals, smart overlay or notification mode, and available via Homebrew.",
+    link: "https://github.com/ntn0de/blink-reminder",
     skills: ["Swift", "macOS", "AppKit"],
     status: "Open Source"
   }
