@@ -28,7 +28,7 @@ export default function Header() {
         
         <a
           href="mailto:imsarojsubedi@gmail.com"
-          className="whitespace-nowrap px-3 py-1 bg-text text-surface0 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider rounded-full hover:bg-[#96BF48] hover:text-text transition-all"
+          className="whitespace-nowrap px-3 py-1 bg-text text-surface0 text-[11px] sm:text-[12px] font-bold uppercase tracking-wider rounded-full hover:bg-[#96BF48] hover:text-text transition-all"
         >
           Hire Me
         </a>
@@ -40,7 +40,7 @@ function NavLink({ href, children, active }) {
   return (
     <Link
       href={href}
-      className={`whitespace-nowrap px-3 sm:px-4 py-2 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-wider transition-all hover:text-text ${
+      className={`whitespace-nowrap px-3 sm:px-4 py-2 rounded-full text-[11px] sm:text-[12px] font-bold uppercase tracking-wider transition-all hover:text-text ${
         active ? "bg-text/5 text-text" : "text-subtext0 hover:bg-text/5"
       }`}
     >

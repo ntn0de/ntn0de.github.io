@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { SiGithub, SiLinkedin, SiShopify } from "react-icons/si";
 import { MdEmail, MdArrowForward } from "react-icons/md";
-import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 
 export default function Hero() {
@@ -12,12 +12,12 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="w-full max-w-4xl mb-32 relative">
+    <section className="w-full max-w-4xl mb-24 relative">
       {/* Structural background elements - subtle and modern */}
       <div className="absolute -left-20 top-0 w-64 h-64 bg-deep-saffron/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -right-20 bottom-0 w-64 h-64 bg-himalayan-blue/5 rounded-full blur-3xl pointer-events-none" />
       
-      <div className="relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+      <div className="relative z-10 flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
         {/* Portrait - Now visible on mobile and ordered first */}
         <div className="opacity-0 animate-fade-in stagger-3 relative group transition-all duration-1000 ease-out order-first lg:order-last">
           {/* Geometrical frames around portrait */}
@@ -46,7 +46,7 @@ export default function Hero() {
             {[
               { icon: SiGithub, href: "https://github.com/ntn0de", label: "GitHub" },
               { icon: SiLinkedin, href: "https://www.linkedin.com/in/sarojsubedi/", label: "LinkedIn" },
-              { icon: FaTwitter, href: "https://twitter.com/ntn0de", label: "Twitter" },
+              { icon: FaXTwitter, href: "https://x.com/ntn0de", label: "X" },
               { icon: MdEmail, href: "mailto:imsarojsubedi@gmail.com", label: "Email" }
             ].map((social, i) => (
               <a
@@ -64,8 +64,8 @@ export default function Hero() {
         </div>
 
         {/* Text Content - Left Aligned for a more professional 'expert' look */}
-        <div className="w-full flex-1 text-center lg:text-left space-y-8">
-          <div className="opacity-0 animate-fade-in inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface0 border border-[#96BF48]/20 text-[10px] font-bold tracking-widest uppercase text-subtext0 shadow-sm mx-auto lg:mx-0">
+        <div className="w-full flex-1 text-center lg:text-left space-y-6">
+          <div className="opacity-0 animate-fade-in inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface0 border border-[#96BF48]/20 text-[11px] font-bold tracking-widest uppercase text-subtext0 shadow-sm mx-auto lg:mx-0">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#96BF48] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#96BF48]"></span>
@@ -78,12 +78,12 @@ export default function Hero() {
               Er. Saroj Subedi
             </p>
 
-            <h1 className="opacity-0 animate-fade-up stagger-2 text-4xl sm:text-6xl md:text-7xl font-light font-serif text-text leading-[1.2] lg:leading-[1.1] tracking-tight">
+            <h1 className="opacity-0 animate-fade-up stagger-2 text-3xl sm:text-5xl md:text-6xl font-light font-serif text-text leading-[1.2] lg:leading-[1.1] tracking-tight">
               Engineering <span className="text-[#96BF48] relative">Shopify</span> Growth Through <span className="italic">Custom Apps</span> & Architecture.
             </h1>
           </div>
 
-          <p className="opacity-0 animate-fade-up stagger-3 text-lg sm:text-xl text-subtext0 max-w-2xl leading-relaxed font-normal mx-auto lg:mx-0">
+          <p className="opacity-0 animate-fade-up stagger-3 text-base sm:text-lg text-subtext0 max-w-2xl leading-relaxed font-normal mx-auto lg:mx-0">
             Helping high-volume merchants overcome technical limits. From architecting <span className="text-text font-medium underline decoration-[#96BF48]/30">Custom Shopify Apps</span>, <span className="text-text font-medium underline decoration-[#96BF48]/30">Shopify Functions</span> and <span className="text-text font-medium underline decoration-[#96BF48]/30">Checkout Extensibility</span> to deep <span className="text-text font-medium underline decoration-[#96BF48]/30">ERP integrations</span>, I build robust systems that convert browsers into loyal customers.
           </p>
 

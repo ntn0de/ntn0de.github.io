@@ -16,6 +16,8 @@ import {
   SiPhp,
   SiRemix,
   SiCloudflare,
+  SiFlutter,
+  SiSwift,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { MdArrowForward, MdOutlineAutoAwesomeMotion } from "react-icons/md";
@@ -93,24 +95,9 @@ const skillIcons = {
   "Vue.js": SiVuedotjs,
   "RemixJS": SiRemix,
   "Cloudflare": SiCloudflare,
-};
-
-const skillColors = {
-  "Shopify": "#96BF48",
-  "React": "#61DAFB",
-  "Node.js": "#339933",
-  "TypeScript": "#3178C6",
-  "Python": "#3776AB",
-  "Tailwind CSS": "#06B6D4",
-  "Laravel": "#FF2D20",
-  "AWS": "#FF9900",
-  "WordPress": "#21759B",
-  "WooCommerce": "#96588A",
-  "Java": "#ED8B00",
-  "Spring Boot": "#6DB33F",
-  "MySQL": "#4479A1",
-  "PHP": "#777BB4",
-  "Vue.js": "#4FC08D",
+  "Flutter": SiFlutter,
+  "Swift": SiSwift,
+  "Vue": SiVuedotjs,
 };
 
 const education = [
@@ -179,12 +166,12 @@ const services = [
 
 export default function Portfolio() {
   return (
-    <div className="w-full max-w-4xl space-y-40">
+    <div className="w-full max-w-4xl space-y-32">
       {/* Solutions & Expertise Section */}
       <div id="solutions" className="relative opacity-0 animate-fade-up">
         <div className="mb-16">
           <h3 className="text-sm font-bold text-[#96BF48] uppercase tracking-[0.3em] mb-4">What I Do</h3>
-          <h2 className="text-4xl sm:text-5xl lg:text-7xl font-light font-serif text-text tracking-tight">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light font-serif text-text tracking-tight">
             Specialized <span className="italic">Solutions</span>.
           </h2>
         </div>

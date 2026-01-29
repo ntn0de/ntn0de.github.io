@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Stats from "../components/Stats";
 import Portfolio from "../components/Portfolio";
+
 import { NextSeo } from "next-seo";
 
 export default function Home() {
@@ -22,7 +23,8 @@ export default function Home() {
           <div className="mt-20 lg:mt-32">
             <Stats />
           </div>
-          <div className="mt-24">
+
+          <div className="mt-20">
             <Portfolio />
           </div>
         </div>

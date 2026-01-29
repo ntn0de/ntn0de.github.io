@@ -46,7 +46,7 @@ export function BlogContent({ blogData, blogContent, components }) {
 
         <div className="prose prose-invert prose-lg max-w-none 
           prose-headings:font-serif prose-headings:font-light prose-headings:tracking-tight
-          prose-p:text-subtext0 prose-p:leading-relaxed prose-p:font-normal
+          prose-p:text-subtext0 prose-p:leading-loose prose-p:font-normal
           prose-strong:text-text prose-strong:font-bold
           prose-a:text-[#96BF48] prose-a:no-underline hover:prose-a:underline
           prose-code:text-text prose-code:bg-surface0 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:before:content-none prose-code:after:content-none
@@ -57,7 +57,7 @@ export function BlogContent({ blogData, blogContent, components }) {
           <MDXRemote {...blogContent} components={components} />
         </div>
 
-        <div className="mt-20 pt-12 border-t border-text/5">
+        <div className="mt-16 pt-12 border-t border-text/5">
            <div className="bg-surface0 rounded-3xl p-8 sm:p-12 text-center border border-text/5">
               <h3 className="text-2xl font-serif font-light mb-6">Found this helpful?</h3>
               <p className="text-subtext0 mb-8 max-w-md mx-auto">I share technical insights and Shopify growth strategies regularly. Let&apos;s connect if you&apos;re building something great.</p>

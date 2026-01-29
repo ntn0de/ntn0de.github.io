@@ -2,11 +2,11 @@ import { BlogTitle } from './Blog';
 
 export default function BlogList({blogs}) {
   return (
-    <div className="flex flex-col gap-16 max-w-4xl w-full">
+    <div className="flex flex-col gap-12 max-w-4xl w-full">
         {blogs.map((blog, index) => (
             <div
               key={blog.id}
-              className={`group flex flex-col gap-4 pb-12 border-b border-text/5 last:border-0 opacity-0 animate-fade-up stagger-${(index % 5) + 1}`}
+              className={`group flex flex-col gap-4 pb-10 border-b border-text/5 last:border-0 opacity-0 animate-fade-up stagger-${(index % 5) + 1}`}
             >
                 <BlogTitle blog={blog} />
                 <p className="text-lg text-subtext0 font-normal leading-relaxed max-w-2xl group-hover:text-text/80 transition-colors">
